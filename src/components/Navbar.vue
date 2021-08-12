@@ -34,10 +34,28 @@
             <span class="line"></span>
           </div>
         </div>
-        <ul class="dropdown-menu">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
+        <ul class="dropdown-menu gradient-border">
+          <div class="dpinner">
+            <a href="#">
+            <div class="drimg">
+              <img src="@/assets/d1.png" alt="Logo" />
+            </div>
+            LOCKER OF AANAKE
+            </a>
+            <a href="#">
+            <div class="drimg">
+              <img src="@/assets/d2.png" alt="Logo" />
+            </div>
+            OLYMPUS DASHBOARD
+            </a>
+            <a href="#">
+            <div class="drimg">
+              <img src="@/assets/d3.png" alt="Logo" />
+            </div>
+            KRONOS WHEEL
+            </a>
+          </div>
+
         </ul>
       </div>
       <a class="dappbtn">DAPPS</a>
@@ -70,10 +88,46 @@ margin-left: 8px;
 }
 .dropdown-menu{
   background: #081A2E;
-  padding: 8px 12px;
+  padding: 20px 30px;
   border-radius: 8px;
- 
+  max-width: unset;
+  width: auto;
+ text-align: center;
   margin-top: 20px;
+  
+  font-size: 14px;
+      left: -300% !important;
+          z-index: 10;
+}
+.dpinner{
+display: flex;
+  align-items: flex-start;
+}
+.dpinner a{
+      white-space: nowrap;
+  margin: 0 6px;
+}
+
+.drimg{
+  padding: 8px;
+  border-radius: 12px;
+  background: #23354b;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 12px;
+}
+.drimg img{
+  height: 100%;
+  width: auto;
+  transform: translateY(14px);
+  transition: all 0.6s ease;
+}
+.dpinner a:hover img{
+  transform: translateY(0);
 }
 .dropdowndapp{
  margin-right: 0px;
@@ -175,6 +229,15 @@ color:#fff
 }
 
 
+.dropdowndapp .gradient-border{
+  border-radius: 16px;
+  background: linear-gradient(0deg, #3345f5 0%, #3bc9f5 100%) !important;
+}
+
+.dropdowndapp .gradient-border:before{
+  border-radius: 16px;
+  background-color: #07192d;
+}
 
 .dropdowndapp .dropdowndappham{
   color:#848d97 ;
@@ -252,6 +315,13 @@ color:#fff
     display: none;
   }
   .center{display: none;}
+  .dpinner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .dpinner a{
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 650px) {
   .val-bg {
@@ -275,6 +345,9 @@ color:#fff
     max-height: unset;
     width: 60%;
     height: auto;
+  }
+  .dropdown-menu{
+    left: -150% !important;
   }
 }
 </style>
