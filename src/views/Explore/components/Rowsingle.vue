@@ -1,22 +1,24 @@
 <template>
   <div class="row">
-    <div class="tokenouter">
-      <img src="@/assets/icons/coin.svg" alt="Logo" /> Locked: OLYMPUS / BNB
+    <div class="toknname rw-inner">
+      <h3>
+        <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS / BNB<img
+          src="@/assets/icons/bnb.svg"
+          alt="Logo"
+        />
+      </h3>
     </div>
-    <div>54%</div>
-    <div>Locked: 02/02/21</div>
-    <div>UnlockS: 02/02/21</div>
-    <div>
-      <div class="countdown">
-        <div>COUNTDOWN</div>
-        <div class="progress">
-          <div class="bar" style="width:35%"></div>
-        </div>
+
+    <div class="rw-inner">20,098,999.95 <span>( 20.10% )</span></div>
+    <div class="rw-inner">$197.83</div>
+    <div class="rw-inner">$451,814.83</div>
+    <div class="rw-inner">
+      <div class="countdown rw-inner">
         <div class="time">
-           <Timer 
-         starttime="Nov 5, 2021 15:37:25" 
-         endtime="Nov 8, 2022 16:37:25" 
-         trans='{  
+          <Timer
+            starttime="Nov 5, 2021 15:37:25"
+            endtime="Nov 8, 2022 16:37:25"
+            trans='{  
          "day":"D",
          "hours":"h",
          "minutes":"m",
@@ -27,31 +29,42 @@
             "running":"Running",
             "upcoming":"Future"
            }}'
-         ></Timer>
+          ></Timer>
+        </div>
+        <div class="progress">
+          <div class="bar" style="width:35%"></div>
         </div>
       </div>
     </div>
-    <div><button>VIEW</button></div>
+    <div class="rw-inner"><button>VIEW</button></div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 // import ItemComp from "@/components/Itemc.vue"
-import Timer from "@/components/Timer.vue"
+import Timer from "@/components/Timer.vue";
 export default {
   name: "Rowsingle",
-    components:{
-    Timer
-  }
+  components: {
+    Timer,
+  },
 };
 </script>
 
 <style scoped>
+.toknname h3 {
+  display: flex;
+  align-items: center;
+}
+.toknname img {
+  height: 24px;
+  margin: 0 6px;
+}
 .explorerow {
   background-color: #081a2e;
   border-radius: 16px;
-  padding: 20px 22px;
+  padding: 20px 20px;
   max-height: 500px;
   overflow-y: scroll;
 }
@@ -61,15 +74,16 @@ export default {
   align-items: center;
   margin: 16px 0;
 }
-.row div {
-  margin: 0 10px;
+.row .rw-inner {
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
+  width: 16.66%;
 }
-.row div:first-child {
+.row .rw-inner:first-child {
   text-align: left;
 }
-.row div:last-child {
+.row .rw-inner:last-child {
   text-align: right;
 }
 .row_head {
@@ -79,6 +93,7 @@ export default {
   width: 100%;
   font-size: 18px;
   text-transform: uppercase;
+     
 }
 
 button {
@@ -120,6 +135,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100% !important;
 }
 .countdown div {
   text-align: center;
@@ -161,12 +177,19 @@ span {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
-  .row div{
-    margin:3px 0
+@media screen and (max-width: 1200px) {
+  .row .rw-inner {
+    margin: 3px 0;
+    width:100%
   }
-  .time div{
-  margin:0
+  .time div {
+    margin: 0;
+  }
+  .toknname h3{
+    justify-content: center;
+  }
+  .rw-inner button{
+    margin:auto
   }
 }
 </style>

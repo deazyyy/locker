@@ -91,7 +91,7 @@ export default {
   max-width: 420px;
   width: 100%;
   height: fit-content;
-  margin-top: 150px;
+  margin-top: 180px;
 }
 .card-header_img {
   height: 70px;
@@ -132,7 +132,7 @@ h2 {
 .lioncenter {
   width: 100%;
   height: auto;
-  max-width: 420px;
+  max-width: 620px;
 }
 .card-header_center {
   margin: 7px 0;

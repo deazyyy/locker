@@ -1,7 +1,6 @@
 <template>
   <div class="locker">
     <h3>{{name}}</h3>
-    
     <router-link :to="{path: '/' + routername}"><button>{{btnname}}</button></router-link>
   </div>  
 </template>
@@ -53,8 +52,20 @@ button{
   /* background-size: 50%; */
   position: relative;
 }
-button:hover{
+/* button:hover{
   background: linear-gradient(145deg, #3345f5, #3bc9f5);
   background-size: 100%;
+} */
+button:hover,
+button:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #1973bc;
+  }
 }
 </style>

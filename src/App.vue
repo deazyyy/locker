@@ -20,7 +20,7 @@ export default {
 <style>
 * {
   font-family: "Open Sans", sans-serif;
-  text-decoration:none
+  text-decoration:none !important
 }
 ::-webkit-scrollbar-track
 {

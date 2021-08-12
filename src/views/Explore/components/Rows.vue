@@ -12,183 +12,23 @@
         <div>
           <button class="gradient-border">
             LOCKED <i class="fas fa-angle-down"></i>
+   
           </button>
         </div>
       </div>
       <div class="explorerowbody">
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>
-            2 DAYS LEFT
-            <img src="@/assets/red_time.png" alt="Logo" class="red_time" />
-          </div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
-
-        <div class="row">
-          <div class="toknname">
-            <h3>
-              <img src="@/assets/icons/olympus.svg" alt="Logo" /> OLYMPUS /
-              BNB<img src="@/assets/icons/bnb.svg" alt="Logo" />
-            </h3>
-          </div>
-          <div>20,098,999.95 <span>( 20.10% )</span></div>
-          <div>$197.83</div>
-          <div>$451,814.83</div>
-          <div>6 MONTHS LEFT</div>
-          <div><button>VIEW</button></div>
-        </div>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
+        <Rowsingle/>
       </div>
     </div>
   </section>
@@ -196,9 +36,13 @@
 
 <script>
 // @ is an alias to /src
-// import ItemComp from "@/components/Itemc.vue"
+
+import Rowsingle from "./Rowsingle.vue"
 export default {
   name: "Rows",
+components:{
+    Rowsingle
+  },
 };
 </script>
 
@@ -236,9 +80,12 @@ export default {
   border-bottom: 2px solid #4c5d74;
   padding-bottom: 12px;
   margin-bottom: 12px;
+   padding-left: 14px;
+    padding-right: 30px;
 }
 .row_head button:before {
   background: #081a2e;
+  
 }
 .red_time {
   height: 22px;

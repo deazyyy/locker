@@ -60,11 +60,12 @@ export default {
 
 <style scoped>
 .dappbtn{
-margin-right:10px;
+margin-right:18px;
 color:#848d97 !important;
 font-weight:600;
 cursor:pointer;
-text-decoration:none
+text-decoration:none;
+margin-left: 8px;
 
 }
 .dropdown-menu{

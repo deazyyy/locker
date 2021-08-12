@@ -4,7 +4,7 @@
       <lottie-player 
             src="https://assets9.lottiefiles.com/packages/lf20_enrsedre.json"
             background="transparent"
-            speed="0.3" loop autoplay >
+            speed="0.4" loop autoplay >
           </lottie-player>
     <!-- <div class="lionclick" v-if="isclicked">
       <lottie-player 
