@@ -35,6 +35,7 @@
           </div>
         </div>
         <ul class="dropdown-menu gradient-border">
+          <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/>
           <div class="dpinner">
             <a href="#">
             <div class="drimg">
@@ -77,6 +78,12 @@ export default {
 </script>
 
 <style scoped>
+.arrow-pointed{
+  position: absolute;
+      top: -20px;
+    height: 23px;
+    left: 47%;
+}
 .dappbtn{
 margin-right:18px;
 color:#848d97 !important;
@@ -86,6 +93,7 @@ text-decoration:none;
 margin-left: 8px;
 
 }
+
 .dropdown-menu{
   background: #081A2E;
   padding: 20px 30px;
@@ -231,7 +239,7 @@ color:#fff
 
 .dropdowndapp .gradient-border{
   border-radius: 16px;
-  background: linear-gradient(0deg, #3345f5 0%, #3bc9f5 100%) !important;
+  background: linear-gradient(0deg, #3345f5 0%, #3bddf4 100%) !important;
 }
 
 .dropdowndapp .gradient-border:before{
