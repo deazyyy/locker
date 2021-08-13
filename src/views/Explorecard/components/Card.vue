@@ -105,6 +105,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  word-break: break-all;
 }
 
 .link img, .locked img{

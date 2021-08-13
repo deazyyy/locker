@@ -161,6 +161,11 @@ span {
   display: flex;
 }
 
+@media screen and (max-width: 1150px) {
+  .row div:last-child{
+    margin:10px auto 0
+  }
+}
 @media screen and (max-width: 768px) {
   .row div{
     margin:3px 0

@@ -153,6 +153,14 @@ section.container {
 }
 
 
+@media screen and (max-width: 768px) {
+  .lockersrow {
+   flex-direction: column;
+  }
+  .locker{
+    margin: 20px 0 0 !important;
+  }
+}
 @media screen and (max-width: 650px) {
   .container {
     width: 86%;

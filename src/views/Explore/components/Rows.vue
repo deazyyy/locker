@@ -162,6 +162,11 @@ background-color:rgba(255,255,255,0.3) !important
 }
 .nav-item{
   margin-top: 80px;
+  transition: all 0.3s ease;
+}
+.nav-item:hover{
+  transform: scale(1.03);
+  transform-origin: center;
 }
 .filter{
     background-color: #081a2e;
