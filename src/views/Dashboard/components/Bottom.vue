@@ -76,6 +76,7 @@ export default {
   border-radius: 16px;
   background-color: #081a2e;
   padding: 30px 20px;
+  line-height: 1.75;
 }
 .gradient-text {
   text-align: center;
@@ -141,6 +142,9 @@ section p span{
   }
   .zeuslogo{
     max-width: 30vw;
+  }
+  .zeuslogoOuter{
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -51,7 +51,6 @@
 
       <div class="info">
         Once tokens are locked they cannot be withdrawn under any circumstance
-        <br />
         untiil the timer has finished, by locking you agree and understand this
         requirment
       </div>
@@ -87,7 +86,7 @@ export default {
           var value = $(this)
             .prev()
             .attr("value");
-          $(this).html(value);
+          $(this).html(value + "%");
         });
 
         range.on("input", function() {
@@ -303,6 +302,8 @@ input::placeholder {
   color: #68737f;
   font-size: 14px;
   margin: 20px 0;
+      width: 80%;
+    max-width: 500px;
 }
 
 .btnOuter{
@@ -347,6 +348,9 @@ input::placeholder {
   }
   .btnOuter .gradient-border{
   margin-top:14px !important
+  }
+  .feerow span{
+    display: block;
   }
 }
 </style>

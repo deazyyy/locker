@@ -3,7 +3,7 @@
         data-wow-duration="0.6s"
         data-wow-delay="0.5s">
   <nav  >
-    <img src="@/assets/logo.png" alt="Logo" class="logo" />
+    <router-link to="/"><img src="@/assets/logo.png" alt="Logo" class="logo" /></router-link>
     <div class="center">
       <ul>
         <li><router-link to="/explore">Explore</router-link></li>
@@ -41,7 +41,7 @@
             <div class="drimg">
               <img src="@/assets/d1.png" alt="Logo" />
             </div>
-            LOCKER OF AANAKE
+            LOCKER OF ANANKE
             </a>
             <a href="#">
             <div class="drimg">
@@ -53,7 +53,8 @@
             <div class="drimg">
               <img src="@/assets/d3.png" alt="Logo" />
             </div>
-            KRONOS WHEEL
+            WHEEL OF KRONOS <br/>
+            (Coming Soon)
             </a>
           </div>
 
@@ -78,11 +79,14 @@ export default {
 </script>
 
 <style scoped>
+.dropdowndapp, .dropdowndappham {
+  background: transparent !important;
+}
 .arrow-pointed{
   position: absolute;
       top: -20px;
     height: 23px;
-    left: 47%;
+    left: 60%;
 }
 .dappbtn{
 margin-right:18px;
@@ -104,7 +108,7 @@ margin-left: 8px;
   margin-top: 20px;
   
   font-size: 14px;
-      left: -300% !important;
+      left: -450% !important;
           z-index: 10;
 }
 .dpinner{
@@ -114,6 +118,7 @@ display: flex;
 .dpinner a{
       white-space: nowrap;
   margin: 0 6px;
+      width: 160px;
 }
 
 .drimg{
@@ -229,8 +234,8 @@ color:#fff
   border-top: 0 !important;
   border-image:  linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0)) 100% 1;
   padding-bottom: 4px;
-  list-style-type: none
-  /* transition: all 0.5s ease; */
+  list-style-type: none;
+  transition: all 0.2s linear;
 }
 .center ul li:hover{
   border-image:  linear-gradient(to right, #3345f5, #3bc9f5) 100% 1;

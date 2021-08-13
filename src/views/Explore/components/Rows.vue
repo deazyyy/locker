@@ -9,13 +9,14 @@
         <li class="nav-item navitem1">
           <a class="nav-link active" data-toggle="pill" href="#lockedliquidity">
              <div class="tokenlocked tokenbx">
-                <div class="card-header_img">
+                
+                LOCKED LIQUIDITY
+                <div class="card-header_img" style="margin: 0 0px 0 8px">
                     <img src="@/assets/icons/jug.png" alt="Logo" />
                 </div>
-                LOCKED LIQUIDITY
             </div>
             <div class="gradient-border tokenbx">
-              LOCKED LIQUIDITY <div class="img"><img src="@/assets/icons/jug.png" alt="Logo" /></div>
+              LOCKED LIQUIDITY <div class="img" ><img src="@/assets/icons/jug.png" alt="Logo" /></div>
             </div>
           </a>
         </li>
@@ -25,10 +26,10 @@
         <li class="nav-item navitem1">
           <a class="nav-link" data-toggle="pill" href="#lockedtoken">
             <div class="gradient-border tokenbx">
-              LOCKED TOKENS <div class="img"><img src="@/assets/icons/token.svg" alt="Logo" /></div>
+              <div class="img" style="margin: 0 8px 0 -8px"> <img src="@/assets/icons/token.svg" alt="Logo" /></div>LOCKED TOKENS 
             </div>
             <div class="tokenlocked tokenbx">
-                <div class="card-header_img">
+                <div class="card-header_img" >
                     <img src="@/assets/icons/token.svg" alt="Logo" />
                 </div>
                 LOCKED TOKENS
@@ -58,8 +59,18 @@
         <div>VALUE LOCKED</div>
         <div>NEXT UNLOCK</div>
         <div>
-          <button class="gradient-border">
-            LOCKED <i class="fas fa-angle-down"></i>
+          <button >
+            <div class="dropdown">
+              <button type="button" class="gradient-border" data-toggle="dropdown">
+                LOCKED <i class="fas fa-angle-down"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">All</a>
+                <a class="dropdown-item" href="#">Locked</a>
+                <a class="dropdown-item" href="#">Unlocked</a>
+              </div>
+            </div>
+            
    
           </button>
         </div>
@@ -113,6 +124,21 @@ components:{
 </script>
 
 <style scoped>
+.dropdown-menu{
+  max-width: 100px;
+    text-align: left;
+        background-color: #131F33;
+}
+.dropdown-item{
+  color: #fff;
+      text-align: left;
+      
+}
+.dropdown-item:hover{
+background-color:rgba(255,255,255,0.3) !important
+}
+
+
 .tab-pane{
   padding: 0;
   margin-top: 20px;
@@ -377,6 +403,8 @@ span {
   background: transparent;
   position: relative;
 }
+
+
 
 @media screen and (max-width: 1200px) {
   .row {

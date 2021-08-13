@@ -8,6 +8,13 @@
       </h3>
       <h4>THE SAFEST PLACE TO SECURE YOUR TOKENS & Liquidity</h4>
     </div>
+    <div class="container lockersrow wow fadeInDown"
+      data-wow-duration="0.6s"
+      data-wow-delay="0.7s">
+      <Lockers name="explore locks" btnname="explore" routername="explore"/>
+      <Lockers name="LOCK LIQUIDITY" btnname="LOCK" routername="liquiditylocker"/>
+      <Lockers name="LOCK TOKENS" btnname="LOCK" routername="tokenlocker"/>
+    </div>
     <div class="gatewayrow">
       <div class="card-header" data-wow-duration="0.6s" data-wow-delay="0.9s">
         <div class="card-header_img">
@@ -45,10 +52,12 @@
 <script>
 // @ is an alias to /src
 import Lionanimate from "@/components/Lionanimate.vue";
+import Lockers from "@/components/Lockers.vue";
 export default {
   name: "Gateway",
   components:{
-    Lionanimate
+    Lionanimate,
+    Lockers
   }
 };
 </script>
@@ -271,5 +280,18 @@ h2 {
     font-size: 14px !important;
   }
   
+}
+
+@media screen and (max-width: 768px) {
+
+  .lockersrow{
+    flex-direction: column;
+  }
+  .lockersrow .locker{
+    margin:0;
+    margin-bottom: 20px;
+  }
+
+
 }
 </style>
