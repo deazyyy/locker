@@ -44,6 +44,10 @@ export default {
 input:focus{
   outline:none
 }
+.timepicker [data-action=togglePeriod]{
+  background: #2F3D4D !important;
+  min-width: unset !important
+}
 a{
   text-decoration: none;
   color:#fff

@@ -24,7 +24,8 @@
       </div>
       <div class="token_address">
         <h4>UNLOCK DATE</h4>
-        <input placeholder="28TH AUGUST, 2021 5:30PM"   />
+        <input type='text' id='datetimepicker1' placeholder="28TH AUGUST, 2021 5:30PM"  />
+        <!-- <input placeholder="28TH AUGUST, 2021 5:30PM"   /> -->
       </div>
 
       <div class="fees">
@@ -224,6 +225,7 @@ input {
   width: 100%;
   padding: 10px 8px;
   color: #fff;
+  text-align: center;
 }
 input:focus{
   outline: none;

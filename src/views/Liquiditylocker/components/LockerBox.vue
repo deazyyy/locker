@@ -24,7 +24,7 @@
       </div>
       <div class="token_address">
         <h4>UNLOCK DATE</h4>
-        <input placeholder="28TH AUGUST, 2021 5:30PM"   />
+        <input type='text' id='datetimepicker2' placeholder="28TH AUGUST, 2021 5:30PM"  />
       </div>
 
       <div class="fees">
@@ -70,12 +70,17 @@
 <script>
 // @ is an alias to /src
 // import ItemComp from "@/components/Itemc.vue"
+// import * as moment from '../../../assets/moment.min.js';
+// import * as datetimepicker from '../../../assets/bootstrap-datetimepicker.min.js';
 
 const $ = require('jquery')
+
 window.$ = $;
+
 export default {
   name: "LockerBox",
   mounted: function() {
+    
     var rangeSlider = function() {
       var slider = $(".range-slider2"),
         range = $(".range-slider2__range"),
@@ -98,9 +103,32 @@ export default {
     };
 
     rangeSlider();
+    
   },
+  // methods:{
+  //   function () {
+  //       $('#datetimepicker2').datetimepicker();
+  //   }
+  // }
   
 };
+//  console.log(this.$appName)
+// const plugin2 = document.createElement("script");
+//     plugin2.setAttribute(
+//       "src",
+//       "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"
+//     );
+//     plugin2.async = true;
+//     document.head.appendChild(plugin2);
+//      const plugin = document.createElement("script");
+//     plugin.setAttribute(
+//       "src",
+//       "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"
+//     );
+//     plugin.async = true;
+//     document.head.appendChild(plugin);
+    
+//     $('#datetimepicker2').datetimepicker();
 </script>
 
 <style scoped>
