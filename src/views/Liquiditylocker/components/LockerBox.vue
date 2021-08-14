@@ -72,15 +72,30 @@
 // import ItemComp from "@/components/Itemc.vue"
 // import * as moment from '../../../assets/moment.min.js';
 // import * as datetimepicker from '../../../assets/bootstrap-datetimepicker.min.js';
-
 const $ = require('jquery')
-
 window.$ = $;
-
 export default {
   name: "LockerBox",
+  beforeCreate() {
+      const plugin2 = document.createElement("script");
+    plugin2.setAttribute(
+      "src",
+      "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"
+    );
+    plugin2.async = true;
+    document.head.appendChild(plugin2);
+     const plugin = document.createElement("script");
+    plugin.setAttribute(
+      "src",
+      "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"
+    );
+    plugin.async = true;
+    document.head.appendChild(plugin);
+    },
   mounted: function() {
     
+    
+    $('#datetimepicker2').datetimepicker();
     var rangeSlider = function() {
       var slider = $(".range-slider2"),
         range = $(".range-slider2__range"),
@@ -112,23 +127,6 @@ export default {
   // }
   
 };
-//  console.log(this.$appName)
-// const plugin2 = document.createElement("script");
-//     plugin2.setAttribute(
-//       "src",
-//       "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"
-//     );
-//     plugin2.async = true;
-//     document.head.appendChild(plugin2);
-//      const plugin = document.createElement("script");
-//     plugin.setAttribute(
-//       "src",
-//       "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"
-//     );
-//     plugin.async = true;
-//     document.head.appendChild(plugin);
-    
-//     $('#datetimepicker2').datetimepicker();
 </script>
 
 <style scoped>

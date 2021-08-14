@@ -100,10 +100,10 @@ section.container {
   text-align: center;
 }
 .heading h3 {
-  font-size: 22px;
+  font-size: 22px !important;
 }
 .heading h4 {
-  font-size: 20px;
+  font-size: 18px !important;
 }
 
 

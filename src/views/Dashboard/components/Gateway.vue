@@ -72,6 +72,9 @@ export default {
 /* .col-md-3{
     margin: 0 10px;
 } */
+.locker{
+  max-width: 500px !important;
+}
 .gatewayrow {
   display: flex;
   justify-content: space-between;
