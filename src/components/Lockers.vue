@@ -27,7 +27,7 @@ export default {
   border: 4px solid #3345f5;
   box-shadow:0px 0px 15px 10px rgba(51, 69, 245, 0.2);
   margin: 0 20px;
-  /* max-width: 420px; */
+  max-width: 500px;
 }
 h3{
   text-transform: uppercase;

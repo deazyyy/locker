@@ -34,8 +34,8 @@
             <span class="line"></span>
           </div>
         </div>
-        <ul class="dropdown-menu gradient-border">
-          <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/>
+        <ul class="dropdown-menu">
+          <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
           <div class="dpinner">
             <a href="#">
             <div class="drimg">
@@ -105,8 +105,8 @@ margin-left: 8px;
   max-width: unset;
   width: auto;
  text-align: center;
-  margin-top: 20px;
-  
+  margin-top: 30px;
+  border:  3px solid #49586b;
   font-size: 14px;
       left: -450% !important;
           z-index: 10;
@@ -136,11 +136,11 @@ display: flex;
 .drimg img{
   height: 100%;
   width: auto;
-  transform: translateY(14px);
-  transition: all 0.6s ease;
+  /* transform: translateY(14px); */
+  transition: all 0.3s ease-in-out;
 }
 .dpinner a:hover img{
-  transform: translateY(0);
+  transform: scale(1.1);
 }
 .dropdowndapp{
  margin-right: 0px;

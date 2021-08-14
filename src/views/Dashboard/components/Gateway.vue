@@ -8,13 +8,7 @@
       </h3>
       <h4>THE SAFEST PLACE TO SECURE YOUR TOKENS & Liquidity</h4>
     </div>
-    <div class="container lockersrow wow fadeInDown"
-      data-wow-duration="0.6s"
-      data-wow-delay="0.7s">
-      <Lockers name="explore locks" btnname="explore" routername="explore"/>
-      <Lockers name="LOCK LIQUIDITY" btnname="LOCK" routername="liquiditylocker"/>
-      <Lockers name="LOCK TOKENS" btnname="LOCK" routername="tokenlocker"/>
-    </div>
+    
     <div class="gatewayrow">
       <div class="card-header" data-wow-duration="0.6s" data-wow-delay="0.9s">
         <div class="card-header_img">
@@ -45,6 +39,13 @@
         </div>
         <h3 class="card-header_btm">Total current lockup time</h3>
       </div>
+    </div>
+    <div class="container lockersrow wow fadeInDown"
+      data-wow-duration="0.6s"
+      data-wow-delay="0.7s">
+      <Lockers name="explore locks" btnname="explore" routername="explore"/>
+      <Lockers name="LOCK LIQUIDITY" btnname="LOCK" routername="liquiditylocker"/>
+      <Lockers name="LOCK TOKENS" btnname="LOCK" routername="tokenlocker"/>
     </div>
   </section>
 </template>
@@ -97,7 +98,7 @@ export default {
   /* height: 100%; */
   /* min-height: 210px; */
   position: relative;
-  max-width: 420px;
+  max-width: 500px;
   width: 100%;
   height: fit-content;
   margin-top: 180px;
@@ -142,6 +143,8 @@ h2 {
   width: 100%;
   height: auto;
   max-width: 620px;
+  transform: scale(1.2);
+  transform-origin: center;
 }
 .card-header_center {
   margin: 7px 0;

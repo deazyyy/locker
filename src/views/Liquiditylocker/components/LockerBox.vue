@@ -301,7 +301,7 @@ input::placeholder {
 .info {
   color: #68737f;
   font-size: 14px;
-  margin: 20px 0;
+  margin: 20px auto;
       width: 80%;
     max-width: 500px;
 }
