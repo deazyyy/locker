@@ -91,8 +91,8 @@ export default {
 
         range.on("input", function() {
           $(this)
-            .next(value)
-            .html(this.value);
+            .next(value )
+            .html(this.value + "%");
         });
       });
     };
@@ -112,11 +112,20 @@ export default {
   width: 100%;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .range-slider__range {
   -webkit-appearance: none;
   width: calc(100% - (73px));
   height: 10px;
   border-radius: 5px;
+  background: -webkit-gradient(linear, right top, left top, from(#3345f5), to(#3bc9f5));
+  background: -o-linear-gradient(right, #3345f5 0%, #3bc9f5 100%);
   background: linear-gradient(to left, #3345f5 0%, #3bc9f5 100%);
   outline: none;
   padding: 0;
@@ -135,29 +144,30 @@ export default {
   transition: background 0.15s ease-in-out;
 }
 .range-slider__range::-webkit-slider-thumb:hover {
-  background: #1abc9c;
+  background: #3bc9f5;
 }
 .range-slider__range:active::-webkit-slider-thumb {
-  background: #1abc9c;
+  background: #3bc9f5;
 }
 .range-slider__range::-moz-range-thumb {
   width: 20px;
   height: 20px;
   border: 0;
   border-radius: 50%;
-  background: #2c3e50;
+  background: #fff;
   cursor: pointer;
   -moz-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
 .range-slider__range::-moz-range-thumb:hover {
-  background: #1abc9c;
+  background: #fff;
 }
 .range-slider__range:active::-moz-range-thumb {
-  background: #1abc9c;
+  background: #fff;
 }
 .range-slider__range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 6px #fff;
+          box-shadow: 0 0 0 3px #fff, 0 0 0 6px #fff;
 }
 
 .range-slider__value {
@@ -185,7 +195,7 @@ export default {
 }
 
 ::-moz-range-track {
-  background: #d7dcdf;
+  background: transparent;
   border: 0;
 }
 
@@ -193,6 +203,9 @@ input::-moz-focus-inner,
 input::-moz-focus-outer {
   border: 0;
 }
+/* input[type="range"] {
+    background: transparent;
+} */
 
 
 

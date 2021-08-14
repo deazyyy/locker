@@ -92,7 +92,7 @@ export default {
         range.on("input", function() {
           $(this)
             .next(value)
-            .html(this.value);
+            .html(this.value + "%");
         });
       });
     };
@@ -112,11 +112,14 @@ export default {
   width: 100%;
 }
 
+
 .range-slider2__range {
   -webkit-appearance: none;
   width: calc(100% - (73px));
   height: 10px;
   border-radius: 5px;
+  background: -webkit-gradient(linear, right top, left top, from(#3345f5), to(#3bc9f5));
+  background: -o-linear-gradient(right, #3345f5 0%, #3bc9f5 100%);
   background: linear-gradient(to left, #3345f5 0%, #3bc9f5 100%);
   outline: none;
   padding: 0;
@@ -145,19 +148,20 @@ export default {
   height: 20px;
   border: 0;
   border-radius: 50%;
-  background: #2c3e50;
+  background: #fff;
   cursor: pointer;
   -moz-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
 }
 .range-slider2__range::-moz-range-thumb:hover {
-  background: #1abc9c;
+  background: #fff;
 }
 .range-slider2__range:active::-moz-range-thumb {
   background: #fff;
 }
 .range-slider2__range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #fff;
+  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 6px #fff;
+          box-shadow: 0 0 0 3px #fff, 0 0 0 6px #fff;
 }
 
 .range-slider2__value {
@@ -185,7 +189,7 @@ export default {
 }
 
 ::-moz-range-track {
-  background: #d7dcdf;
+  background: transparent;
   border: 0;
 }
 
@@ -193,7 +197,9 @@ input::-moz-focus-inner,
 input::-moz-focus-outer {
   border: 0;
 }
-
+/* input[type="range"] {
+    background: transparent;
+} */
 
 
 .lockerbx {
