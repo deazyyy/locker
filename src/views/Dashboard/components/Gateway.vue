@@ -276,6 +276,9 @@ h2 {
     max-width: 200px;
     margin-bottom: 20px;
   }
+  .locker{
+    max-width: unset !important;
+  }
 }
 
 @media screen and (max-width: 650px) {
