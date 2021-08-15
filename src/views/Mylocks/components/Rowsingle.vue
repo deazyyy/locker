@@ -1,11 +1,23 @@
 <template>
   <div class="row">
-    <div class="tokenouter">
+    <div class="tokenouter forpc">
       <img src="@/assets/icons/coin.svg" alt="Logo" /> Locked: OLYMPUS / BNB
     </div>
-    <div>54%</div>
-    <div>Locked: 02/02/21</div>
-    <div>UnlockS: 02/02/21</div>
+    <div class="forpc">54%</div>
+    <div class="forpc">Locked: 02/02/21</div>
+    <div class="forpc">UnlockS: 02/02/21</div>
+    <div class="formobile">
+      <div class="formobilerow">
+        <div class="tokenouter">
+          <img src="@/assets/icons/coin.svg" alt="Logo" /> Locked: OLYMPUS / BNB
+        </div>
+        <div>54%</div>
+      </div>
+      <div class="formobilerow">
+        <div>Locked: 02/02/21</div>
+        <div>UnlockS: 02/02/21</div>
+      </div>
+    </div>
     <div>
       <div class="countdown">
         <div>COUNTDOWN</div>
@@ -13,10 +25,10 @@
           <div class="bar" style="width:35%"></div>
         </div>
         <div class="time">
-           <Timer 
-         starttime="Nov 5, 2021 15:37:25" 
-         endtime="Nov 8, 2022 16:37:25" 
-         trans='{  
+          <Timer
+            starttime="Nov 5, 2021 15:37:25"
+            endtime="Nov 8, 2022 16:37:25"
+            trans='{  
          "day":"D",
          "hours":"h",
          "minutes":"m",
@@ -27,7 +39,7 @@
             "running":"Running",
             "upcoming":"Future"
            }}'
-         ></Timer>
+          ></Timer>
         </div>
       </div>
     </div>
@@ -38,12 +50,12 @@
 <script>
 // @ is an alias to /src
 // import ItemComp from "@/components/Itemc.vue"
-import Timer from "@/components/Timer.vue"
+import Timer from "@/components/Timer.vue";
 export default {
   name: "Rowsingle",
-    components:{
-    Timer
-  }
+  components: {
+    Timer,
+  },
 };
 </script>
 
@@ -72,6 +84,7 @@ export default {
 .row div:last-child {
   text-align: right;
 }
+
 .row_head {
   padding-bottom: 12px;
   margin-bottom: 0px;
@@ -161,17 +174,48 @@ span {
   display: flex;
 }
 
+.formobile {
+  display: none;
+}
+.forpc {
+  display: block;
+}
+
 @media screen and (max-width: 1150px) {
-  .row div:last-child{
+  /* .row div:last-child{
     margin:10px auto 0
+  } */
+
+  .forpc {
+    display: none;
+  }
+  .formobile {
+    display: flex;
+    flex-direction: column;
+    min-width:50%
+    
+  }
+  .formobilerow{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .formobile .formobilerow:nth-child(1){
+    margin-bottom: 6px;
   }
 }
 @media screen and (max-width: 768px) {
-  .row div{
-    margin:3px 0
+  .row div {
+    margin: 3px 0;
   }
-  .time div{
-  margin:0
+  .time div {
+    margin: 0;
   }
+  .formobile {
+  display: none;
+}
+.forpc {
+  display: block;
+}
 }
 </style>

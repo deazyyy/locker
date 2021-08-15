@@ -1,19 +1,21 @@
 <template>
-<div class="wow fadeInDown"
-        data-wow-duration="0.6s"
-        data-wow-delay="0.5s">
-  <nav  >
-    <router-link to="/"><img src="@/assets/logo.png" alt="Logo" class="logo" /></router-link>
-    <div class="center">
-      <ul>
-        <li><router-link to="/explore">Explore</router-link></li>
-        <li><router-link to="/liquiditylocker">LIQUIDITY LOCKER</router-link></li>
-        <li><router-link to="/tokenlocker">TOKEN LOCKER</router-link></li>
-        <li><router-link to="/mylocks">my locks</router-link></li>
-      </ul>
-    </div>
-    <div class="left">
-      <!-- <div class="icons">
+  <div class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.5s">
+    <nav>
+      <router-link to="/"
+        ><img src="@/assets/logo.png" alt="Logo" class="logo"
+      /></router-link>
+      <div class="center">
+        <ul>
+          <li><router-link to="/explore">Explore</router-link></li>
+          <li>
+            <router-link to="/liquiditylocker">LIQUIDITY LOCKER</router-link>
+          </li>
+          <li><router-link to="/tokenlocker">TOKEN LOCKER</router-link></li>
+          <li><router-link to="/mylocks">my locks</router-link></li>
+        </ul>
+      </div>
+      <div class="left">
+        <!-- <div class="icons">
         <div class="val-bg">
           <img src="@/assets/circle.png" alt="Logo" class="logo" />
           $ 0.00000344265
@@ -26,44 +28,44 @@
           <a href="mailto:contact@olympustoken.io" target="_blank"><i class="fas fa-envelope"></i></a>
         </div>
       </div> -->
-      <div class="dropdown dropdowndapp">
-        <div class="dropdowndappham" type="button" data-toggle="dropdown">
-          <div class="hamburger" id="hamburger-1">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+        <div class="dropdown dropdowndapp">
+          <div class="dropdowndappham" type="button" data-toggle="dropdown">
+            <div class="hamburger" id="hamburger-1">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </div>
+          <ul class="dropdown-menu">
+            <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
+            <div class="dpinner">
+              <a href="#">
+                <div class="drimg">
+                  <img src="@/assets/d2.png" alt="Logo" />
+                </div>
+                OLYMPUS DASHBOARD
+              </a>
+              <a href="#">
+                <div class="drimg">
+                  <img src="@/assets/d1.png" alt="Logo" />
+                </div>
+                LOCKER OF ANANKE
+              </a>
+              
+              <a href="#">
+                <div class="drimg">
+                  <img src="@/assets/d3.png" alt="Logo" />
+                </div>
+                WHEEL OF KRONOS <br />
+                (Coming Soon)
+              </a>
+            </div>
+          </ul>
         </div>
-        <ul class="dropdown-menu">
-          <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
-          <div class="dpinner">
-            <a href="#">
-            <div class="drimg">
-              <img src="@/assets/d1.png" alt="Logo" />
-            </div>
-            LOCKER OF ANANKE
-            </a>
-            <a href="#">
-            <div class="drimg">
-              <img src="@/assets/d2.png" alt="Logo" />
-            </div>
-            OLYMPUS DASHBOARD
-            </a>
-            <a href="#">
-            <div class="drimg">
-              <img src="@/assets/d3.png" alt="Logo" />
-            </div>
-            WHEEL OF KRONOS <br/>
-            (Coming Soon)
-            </a>
-          </div>
-
-        </ul>
+        <a class="dappbtn">DAPPS</a>
+        <Button name="Connect" class="connectBtn" />
       </div>
-      <a class="dappbtn">DAPPS</a>
-      <Button name="Connect" class="connectBtn"/>
-    </div>
-  </nav>
+    </nav>
   </div>
 </template>
 
@@ -74,54 +76,54 @@ export default {
   name: "Navbar",
   components: {
     Button,
-  }
+  },
 };
 </script>
 
 <style scoped>
-.dropdowndapp, .dropdowndappham {
+.dropdowndapp,
+.dropdowndappham {
   background: transparent !important;
 }
-.arrow-pointed{
+.arrow-pointed {
   position: absolute;
-      top: -20px;
-    height: 23px;
-    left: 60%;
+  top: -20px;
+  height: 23px;
+  left: 60%;
 }
-.dappbtn{
-margin-right:18px;
-color:#848d97 !important;
-font-weight:600;
-cursor:pointer;
-text-decoration:none;
-margin-left: 8px;
-
+.dappbtn {
+  margin-right: 18px;
+  color: #848d97 !important;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 8px;
 }
 
-.dropdown-menu{
-  background: #081A2E;
+.dropdown-menu {
+  background: #081a2e;
   padding: 20px 30px;
   border-radius: 8px;
   max-width: unset;
   width: auto;
- text-align: center;
+  text-align: center;
   margin-top: 30px;
-  border:  3px solid #49586b;
+  border: 3px solid #49586b;
   font-size: 14px;
-      left: -450% !important;
-          z-index: 10;
+  left: -450% !important;
+  z-index: 10;
 }
-.dpinner{
-display: flex;
+.dpinner {
+  display: flex;
   align-items: flex-start;
 }
-.dpinner a{
-      white-space: nowrap;
+.dpinner a {
+  white-space: nowrap;
   margin: 0 6px;
-      width: 160px;
+  width: 160px;
 }
 
-.drimg{
+.drimg {
   padding: 8px;
   border-radius: 12px;
   background: #23354b;
@@ -133,22 +135,22 @@ display: flex;
   margin: auto;
   margin-bottom: 12px;
 }
-.drimg img{
+.drimg img {
   height: 100%;
   width: auto;
   /* transform: translateY(14px); */
   transition: all 0.3s ease-in-out;
 }
-.dpinner a:hover img{
+.dpinner a:hover img {
   transform: scale(1.1);
 }
-.dropdowndapp{
- margin-right: 0px;
+.dropdowndapp {
+  margin-right: 0px;
 }
-.dropdown-menu li{
+.dropdown-menu li {
   padding: 2px 0;
 }
-.dropdown-menu a{
+.dropdown-menu a {
   color: #fff !important;
 }
 nav {
@@ -162,7 +164,7 @@ nav {
   border-width: 3px;
   border-style: solid;
   border-top: 0 !important;
-  border-image:  linear-gradient(to left, #3345f5, #3bc9f5) 100% 1;
+  border-image: linear-gradient(to left, #3345f5, #3bc9f5) 100% 1;
 }
 nav::after {
   position: absolute;
@@ -172,7 +174,7 @@ nav::after {
   right: 0;
   left: 0;
   top: 0;
-  background:  linear-gradient(to left, #3345f5, #3bc9f5);
+  background: linear-gradient(to left, #3345f5, #3bc9f5);
   filter: blur(10px);
   z-index: -1;
 }
@@ -209,93 +211,86 @@ nav .logo {
   color: #fff;
 }
 
-
-.center{
+.center {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.center ul{
+.center ul {
   display: flex;
-  margin:0
+  margin: 0;
 }
-.center a{
-text-decoration:none;
-color:#fff
+.center a {
+  text-decoration: none;
+  color: #fff;
 }
-.center ul li{
+.center ul li {
   margin: 0 10px;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
-   border-width: 3px;
+  border-width: 3px;
   border-style: solid;
   border-top: 0 !important;
-  border-image:  linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0)) 100% 1;
+  border-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))
+    100% 1;
   padding-bottom: 4px;
   list-style-type: none;
   transition: all 0.2s linear;
 }
-.center ul li:hover{
-  border-image:  linear-gradient(to right, #3345f5, #3bc9f5) 100% 1;
+.center ul li:hover {
+  border-image: linear-gradient(to right, #3345f5, #3bc9f5) 100% 1;
 }
 
-
-.dropdowndapp .gradient-border{
+.dropdowndapp .gradient-border {
   border-radius: 16px;
   background: linear-gradient(0deg, #3345f5 0%, #3bddf4 100%) !important;
 }
 
-.dropdowndapp .gradient-border:before{
+.dropdowndapp .gradient-border:before {
   border-radius: 16px;
   background-color: #07192d;
 }
 
-.dropdowndapp .dropdowndappham{
-  color:#848d97 ;
+.dropdowndapp .dropdowndappham {
+  color: #848d97;
   display: flex;
   align-items: center;
   font-weight: 700;
 }
 
-.dropdowndapp .hamburger{
+.dropdowndapp .hamburger {
   margin-right: 8px;
 }
-.hamburger .line{
+.hamburger .line {
   width: 30px;
   height: 3px;
   background-color: #babfc5;
   display: block;
   margin: 6px auto;
   border-radius: 6px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-.hamburger:hover{
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
   cursor: pointer;
 }
 
 /* ONE */
 
-#hamburger-1.is-active .line:nth-child(2){
+#hamburger-1.is-active .line:nth-child(2) {
   opacity: 0;
 }
 
-#hamburger-1.is-active .line:nth-child(1){
+#hamburger-1.is-active .line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-#hamburger-1.is-active .line:nth-child(3){
+#hamburger-1.is-active .line:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 991px) {
   nav .logo {
@@ -307,7 +302,7 @@ color:#fff
     margin-left: 10px;
   }
   .val-bg img {
-        width: auto;
+    width: auto;
     height: 100%;
   }
 }
@@ -321,18 +316,20 @@ color:#fff
     margin: 0 10px;
   }
   .val-bg img {
-       width: auto;
+    width: auto;
     height: 100%;
   }
   .socialIcons {
     display: none;
   }
-  .center{display: none;}
-  .dpinner{
+  .center {
+    display: none;
+  }
+  .dpinner {
     flex-direction: column;
     align-items: center;
   }
-  .dpinner a{
+  .dpinner a {
     margin: 10px 0;
   }
 }
@@ -343,23 +340,23 @@ color:#fff
   nav .logo {
     max-height: 30px;
   }
-  nav{
-  flex-direction:column
+  nav {
+    flex-direction: column;
   }
-  .logo{
-  margin-bottom:12px
+  .logo {
+    margin-bottom: 12px;
   }
 }
 @media screen and (max-width: 500px) {
-    nav{
-        padding: 10px 14px;
-    }
+  nav {
+    padding: 10px 14px;
+  }
   nav .logo {
     max-height: unset;
     width: 60%;
     height: auto;
   }
-  .dropdown-menu{
+  .dropdown-menu {
     left: -150% !important;
   }
 }
