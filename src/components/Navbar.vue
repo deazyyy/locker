@@ -124,6 +124,9 @@ export default {
   left: -450% !important;
   z-index: 10;
 }
+.left .dropdown-menu{
+  left: -1000% !important;
+}
 .dpinner {
   display: flex;
   align-items: flex-start;
@@ -343,6 +346,9 @@ nav .logo {
   .dpinner a {
     margin: 10px 0;
   }
+  .left .dropdown-menu{
+    left: -700% !important;
+  }
 }
 
 
@@ -480,6 +486,9 @@ nav .logo {
 
   .dropdown-menu {
     left: -150% !important;
+  }
+  .left .dropdown-menu{
+    left: -200% !important;
   }
   
 }
