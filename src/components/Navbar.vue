@@ -89,13 +89,13 @@ export default {
 </script>
 
 <style scoped>
+[type="button"]{
+  background: #081a2e;
+}
 .dap-img {
   height: 22px;
 }
-.dropdowndapp,
-.dropdowndappham {
-  background: transparent !important;
-}
+
 .arrow-pointed {
   position: absolute;
   top: -20px;
@@ -345,19 +345,6 @@ nav .logo {
   }
 }
 
-@media screen and (max-width: 500px) {
-  nav {
-    padding: 10px 14px;
-  }
-  /* nav .logo {
-    max-height: unset;
-    width: 60%;
-    height: auto;
-  } */
-  .dropdown-menu {
-    left: -150% !important;
-  }
-}
 
 
 
@@ -437,6 +424,10 @@ nav .logo {
     top: 50px !important;
     transform: none !important;
   }
+
+  .dpinner li, .dpinner li:hover{
+    border: 0 !important;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -480,4 +471,29 @@ nav .logo {
     transform: none !important;
   }
 }
+
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 10px 14px;
+  }
+
+  .dropdown-menu {
+    left: -150% !important;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  .center {
+    left: 65px;
+  }
+  .center .dropdown-menu {
+        left: -68px !important;
+    width: 100vw;
+    /* top: 58px !important; */
+  }
+  
+}
+
 </style>
