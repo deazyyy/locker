@@ -53,11 +53,12 @@
       <div class="tab-pane active" id="lockedliquidity">
 <div class="explorerow">
       <div class="row row_head">
-        <div>NAME</div>
-        <div>LIQUIDITY LOCKED</div>
-        <div>TOKEN PRICE</div>
-        <div>VALUE LOCKED</div>
-        <div>NEXT UNLOCK</div>
+        <div class="fordk">NAME</div>
+        <div class="fordk">LIQUIDITY LOCKED</div>
+        <div class="fordk">TOKEN PRICE</div>
+        <div class="fordk">VALUE LOCKED</div>
+        <div class="fordk">NEXT UNLOCK</div>
+        <div class="formb">MY LOCKS</div>
         <div>
           <button >
             <div class="dropdown">
@@ -410,7 +411,9 @@ span {
 }
 
 
-
+.formb{
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .row {
     flex-direction: column;
@@ -426,5 +429,12 @@ span {
   .toknname h3{
   justify-content:center;
   }
+   .fordk{
+    display: none;
+  }
+  .formb{
+    display: block;
+  }
 }
+
 </style>

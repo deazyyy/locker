@@ -30,6 +30,7 @@ export default {
   position: relative;
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 </style>

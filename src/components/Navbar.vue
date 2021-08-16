@@ -1,40 +1,48 @@
 <template>
   <div class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.5s">
     <nav>
-      <router-link to="/"
-        ><img src="@/assets/logo.png" alt="Logo" class="logo"
-      /></router-link>
+      <router-link to="/">
+        <img src="@/assets/logo.png" alt="Logo" class="logo lg-dk" />
+        <img src="@/assets/lg-mobile.png" alt="Logo" class="logo lg-mb" />
+        <img src="@/assets/lg-mobile-sm.png" alt="Logo" class="logo lg-mb-sm" />
+      </router-link>
       <div class="center">
-        <ul>
-          <li><router-link to="/explore">Explore</router-link></li>
-          <li>
-            <router-link to="/liquiditylocker">LIQUIDITY LOCKER</router-link>
-          </li>
-          <li><router-link to="/tokenlocker">TOKEN LOCKER</router-link></li>
-          <li><router-link to="/mylocks">my locks</router-link></li>
-        </ul>
-      </div>
-      <div class="left">
-        <!-- <div class="icons">
-        <div class="val-bg">
-          <img src="@/assets/circle.png" alt="Logo" class="logo" />
-          $ 0.00000344265
+        <div class="fordesk">
+          <ul>
+            <li><router-link to="/explore">Explore</router-link></li>
+            <li>
+              <router-link to="/liquiditylocker">LIQUIDITY LOCKER</router-link>
+            </li>
+            <li><router-link to="/tokenlocker">TOKEN LOCKER</router-link></li>
+            <li><router-link to="/mylocks">my locks</router-link></li>
+          </ul>
         </div>
-
-        <div class="socialIcons">
-          <a href="https://mobile.twitter.com/olympus_token" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/olympusbsc/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://t.me/OlympusOfficial" target="_blank"><i class="fab fa-telegram"></i></a>
-          <a href="mailto:contact@olympustoken.io" target="_blank"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div> -->
-        <div class="dropdown dropdowndapp">
-          <div class="dropdowndappham" type="button" data-toggle="dropdown">
+        <div class="formob">
+          <div class="centermenu" type="button" data-toggle="dropdown">
             <div class="hamburger" id="hamburger-1">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
             </div>
+          </div>
+          <ul class="dropdown-menu gradient-border">
+            <div class="dpinner">
+              <li><router-link to="/explore">Explore</router-link></li>
+              <li>
+                <router-link to="/liquiditylocker"
+                  >LIQUIDITY LOCKER</router-link
+                >
+              </li>
+              <li><router-link to="/tokenlocker">TOKEN LOCKER</router-link></li>
+              <li><router-link to="/mylocks">my locks</router-link></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="left">
+        <div class="dropdown dropdowndapp">
+          <div class="dropdowndappham" type="button" data-toggle="dropdown">
+            <img src="@/assets/dapp_menu.png" alt="Logo" class="dap-img" />
           </div>
           <ul class="dropdown-menu">
             <!-- <img src="@/assets/arrow.png" alt="Logo" class="arrow-pointed"/> -->
@@ -51,7 +59,7 @@
                 </div>
                 LOCKER OF ANANKE
               </a>
-              
+
               <a href="#">
                 <div class="drimg">
                   <img src="@/assets/d3.png" alt="Logo" />
@@ -81,6 +89,9 @@ export default {
 </script>
 
 <style scoped>
+.dap-img {
+  height: 22px;
+}
 .dropdowndapp,
 .dropdowndappham {
   background: transparent !important;
@@ -218,7 +229,7 @@ nav .logo {
   transform: translate(-50%, -50%);
 }
 .center ul {
-  display: flex;
+  /* display: flex; */
   margin: 0;
 }
 .center a {
@@ -322,9 +333,9 @@ nav .logo {
   .socialIcons {
     display: none;
   }
-  .center {
+  /* .center {
     display: none;
-  }
+  } */
   .dpinner {
     flex-direction: column;
     align-items: center;
@@ -333,6 +344,101 @@ nav .logo {
     margin: 10px 0;
   }
 }
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 10px 14px;
+  }
+  /* nav .logo {
+    max-height: unset;
+    width: 60%;
+    height: auto;
+  } */
+  .dropdown-menu {
+    left: -150% !important;
+  }
+}
+
+
+
+
+
+.lg-mb, .formob, .lg-mb-sm{
+  display: none;
+}
+
+.fordesk ul{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 3px;
+}
+.fordesk ul li{
+  margin-bottom: 0;
+}
+.centermenu .hamburger {
+  display: none;
+}
+.center .dropdown-menu {
+  position: static !important;
+  padding: 0;
+  border: 0;
+}
+
+.center .gradient-border {
+  border-radius: 20px;
+  background: transparent !important;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.center .gradient-border::before {
+  background: #081a2e;
+  border-radius: 20px;
+   border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.center .dpinner {
+  display: block;
+}
+
+@media screen and (max-width: 1150px) {
+  /* .center .dpinner{
+    display: none;
+  } */
+  .center .gradient-border {
+    background: linear-gradient(to left, #3345f5 0%, #3bc9f5 100%) !important;
+  }
+  .lg-mb, .formob {
+    display: block;
+  }
+
+  .lg-dk, .fordesk {
+    display: none;
+  }
+  .center {
+    left: 20%;
+    transform: translateY(-50%);
+  }
+  .center .dpinner {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .centermenu .hamburger {
+    display: block;
+  }
+  .center .dropdown-menu {
+    position: absolute !important;
+    padding: 20px 10px;
+    border: 0;
+        left: -20.2vw !important;
+    width: 100vw;
+    z-index: 99999;
+    top: 50px !important;
+    transform: none !important;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .val-bg {
     display: none;
@@ -340,24 +446,38 @@ nav .logo {
   nav .logo {
     max-height: 30px;
   }
-  nav {
+  /* nav {
     flex-direction: column;
-  }
+  } */
   .logo {
     margin-bottom: 12px;
   }
-}
-@media screen and (max-width: 500px) {
-  nav {
-    padding: 10px 14px;
+  /* .formob{
+        margin-top: 48px;
+  } */
+  .lg-mb{
+    display: none;
   }
-  nav .logo {
-    max-height: unset;
-    width: 60%;
-    height: auto;
+  .lg-mb-sm{
+    display: block;
+    height: 100%;
+    width: auto;
+    margin-bottom: 0;
   }
-  .dropdown-menu {
-    left: -150% !important;
+  .center {
+    left: 80px;
+  }
+
+
+  .center .dropdown-menu {
+    position: absolute !important;
+    padding: 20px 10px;
+    border: 0;
+        left: -83px !important;
+    width: 100vw;
+    z-index: 99999;
+    /* top: 58px !important; */
+    transform: none !important;
   }
 }
 </style>

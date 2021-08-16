@@ -148,6 +148,8 @@ h2 {
   max-width: 620px;
   transform: scale(1.2);
   transform-origin: center;
+      position: relative;
+    z-index: -1;
 }
 .card-header_center {
   margin: 7px 0;
@@ -275,6 +277,7 @@ h2 {
     margin: auto;
     max-width: 200px;
     margin-bottom: 20px;
+
   }
   .locker{
     max-width: unset !important;
